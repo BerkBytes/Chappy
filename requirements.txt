@@ -5,12 +5,8 @@ openai
 requests
 configparser
 matplotlib
-Pillow
-pygame
 numpy
-cairo
 seaborn
-wordcloud
 bokeh
 altair
 scipy
