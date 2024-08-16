@@ -360,7 +360,7 @@ def main():
     with col1:
         # Main Application Content
         st.image("chappyL.png", use_column_width=True)
-        st.subheader('Built safe for PHI')
+        st.subheader('DEMO VERSION')
         functionality=st.selectbox('Select from the following:', ['Chat','Quick Analysis Script Writer', 'Graphic Generation', 'Model Status'])
 
     # Inside the second column, add the image
