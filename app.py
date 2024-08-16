@@ -329,7 +329,7 @@ def main():
             st.error("Unsupported client type specified")
 
         # Model selection
-        model = st.text_input('Enter model name:')
+        model = st.text_input('Enter model name:','gpt-4o')
         if not model:
             st.warning("Please enter a model name.")
         else:
