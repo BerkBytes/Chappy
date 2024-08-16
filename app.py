@@ -329,7 +329,7 @@ def main():
             st.error("Unsupported client type specified")
 
         # Model selection
-        model = st.text_input('Enter model name:','gpt-4o')
+        model = st.text_input('Enter model name:', 'gpt-4o')
         if not model:
             st.warning("Please enter a model name.")
         else:
@@ -354,18 +354,19 @@ def main():
 
 
     # Create a two-column layout
-    col1, col2 = st.columns([3, 1]) # this will just call methods directly in the returned objects
+    col1, space, col2 = st.columns([4,1, 2]) # this will just call methods directly in the returned objects
 
     # Inside the first column, add the answer text
     with col1:
         # Main Application Content
-        st.title('Chappy')
-        st.subheader('DEMO VERSION')
-        functionality=st.radio('Select from the following:', ['Chat','Quick Analysis Script Writer', 'Graphic Generation'])
+        st.image("chappyL.png", use_column_width=True)
+        st.subheader('Built safe for PHI')
+        functionality=st.selectbox('Select from the following:', ['Chat','Quick Analysis Script Writer', 'Graphic Generation', 'Model Status'])
 
     # Inside the second column, add the image
     with col2:
         st.image("logo.png", use_column_width=True)
+
 
     if (functionality == 'Quick Analysis Script Writer'):
         top_k = st.sidebar.number_input("Top k (number of observations to base data summary on)", value=5)
