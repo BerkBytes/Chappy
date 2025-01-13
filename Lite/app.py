@@ -20,7 +20,7 @@ global config
 config = configparser.ConfigParser()
 
 # Read the config file
-config.read('config.ini')
+config.read('Lite/config.ini')
 
 def save_figure(figure: go.Figure, file):
     return figure.write_image(file, format='pdf')
