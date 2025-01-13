@@ -359,13 +359,13 @@ def main():
     # Inside the first column, add the answer text
     with col1:
         # Main Application Content
-        st.image("chappyL.png", use_column_width=True)
+        st.image("chappyL.png", use_container_width=True)
         st.subheader('DEMO VERSION')
         functionality=st.selectbox('Select from the following:', ['Chat','Quick Analysis Script Writer', 'Graphic Generation', 'Model Status'])
 
     # Inside the second column, add the image
     with col2:
-        st.image("logo.png", use_column_width=True)
+        st.image("logo.png", use_container_width=True)
 
 
     if (functionality == 'Quick Analysis Script Writer'):
