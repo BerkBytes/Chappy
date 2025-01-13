@@ -201,7 +201,7 @@ def format_time(seconds, include_remaining=True):
 # Setting Page Title, Page Icon and Layout Size
 st.set_page_config(
     page_title='Chappy',
-    page_icon="./logoF.png",
+    page_icon="logoF.png",
     layout='wide',
     initial_sidebar_state="expanded",
     menu_items={
@@ -300,13 +300,13 @@ def main():
     # Inside the first column, add the answer text
     with col1:
         # Main Application Content
-        st.image("./chappyL.png", use_container_width=True)
+        st.image("Lite/chappyL.png", use_container_width=True)
         st.subheader('Hi Haley')
         functionality=st.selectbox('Select from the following:', ['Chat','Quick Analysis Script Writer', 'Graphic Generation', 'Model Status'])
 
     # Inside the second column, add the image
     with col2:
-        st.image("./logo.png", use_container_width=True)
+        st.image("Lite/logo.png", use_container_width=True)
 
     if (functionality == 'Quick Analysis Script Writer'):
         top_k = st.sidebar.number_input("Top k (number of observations to base data summary on)", value=5)
