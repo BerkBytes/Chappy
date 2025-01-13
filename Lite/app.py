@@ -301,7 +301,7 @@ def main():
     with col1:
         # Main Application Content
         st.image("chappyL.png", use_container_width=True)
-        st.subheader('DEMO VERSION')
+        st.subheader('Hi Haley')
         functionality=st.selectbox('Select from the following:', ['Chat','Quick Analysis Script Writer', 'Graphic Generation', 'Model Status'])
 
     # Inside the second column, add the image
@@ -681,9 +681,6 @@ def main():
                 else:
                     st.sidebar.error("No file uploaded.")
 
-    st.sidebar.title("Brought to you by the Tatonetti Lab")
-    st.sidebar.empty()
-    st.sidebar.image("tlab-logo-large.png", width=100)
     st.sidebar.divider()
 
 if __name__ == "__main__":
